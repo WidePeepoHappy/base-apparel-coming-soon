@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background: linear-gradient(135deg, white, #fff5f5);
+  width: 100vw;
+  position: relative;
+}
+
+@media (min-width: 1220px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+.grid {
+  width: 375px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .grid {
+    height: 100vh;
+    width: 100vw;
+    max-width: 1440px;
+    margin: 0 auto;
+    -ms-grid-columns: calc(100vw - 610px) 610px;
+        grid-template-columns: calc(100vw - 610px) 610px;
+    -ms-grid-rows: 215px 565px;
+        grid-template-rows: 215px 565px;
+    background: url(../images/bg-pattern-desktop.svg) no-repeat left 0;
+    background-size: 840;
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid {
+    -ms-grid-columns: 830px 610px;
+        grid-template-columns: 830px 610px;
+  }
+}
+
+.grid__header {
+  width: 105px;
+  margin: 30px;
+}
+
+@media (min-width: 768px) {
+  .grid__header {
+    width: unset;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .grid__header {
+    margin: 0;
+    margin: 65px 100px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .grid__header {
+    margin-left: 160px;
+  }
+}
+
+@media (min-width: 1420px) {
+  .grid__header {
+    margin-left: 180px;
+  }
+}
+
+.grid .grid__img {
+  margin-bottom: 65px;
+  width: 375px;
+}
+
+@media (min-width: 768px) {
+  .grid .grid__img {
+    place-self: center;
+  }
+}
+
+@media (min-width: 1220px) {
+  .grid .grid__img {
+    width: 610px;
+    height: 100vh;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    margin: 0;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+.grid__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 90px;
+}
+
+@media (min-width: 1220px) {
+  .grid__main {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .grid__main {
+    margin-left: 160px;
+  }
+}
+
+@media (min-width: 1420px) {
+  .grid__main {
+    margin-left: 180px;
+  }
+}
+
+.grid__main .header {
+  max-width: 245px;
+  text-align: center;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid__main .header {
+    max-width: 360px;
+    font-size: 3.9rem;
+    letter-spacing: 0.8rem;
+    line-height: 4.5rem;
+  }
+}
+
+@media (min-width: 1220px) {
+  .grid__main .header {
+    text-align: start;
+  }
+}
+
+.grid__main .header span {
+  display: block;
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.grid__main p {
+  max-width: 295px;
+  font-size: 0.87rem;
+  text-align: center;
+  margin: 20px 0 35px;
+  line-height: 1.5rem;
+  color: #ce9797;
+}
+
+@media (min-width: 768px) {
+  .grid__main p {
+    max-width: 430px;
+    font-size: 1rem;
+    margin: 45px 0 45px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .grid__main p {
+    text-align: start;
+  }
+}
+
+.grid__main .input {
+  width: 310px;
+  position: relative;
+  height: 73px;
+}
+
+@media (min-width: 768px) {
+  .grid__main .input {
+    width: 450px;
+    margin: 24.7px 0 24.7px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .grid__main .input {
+    margin: 24.7px 0 1.3px;
+  }
+}
+
+.grid__main .input .email {
+  width: 310px;
+  padding: 15px 25px;
+  padding-right: 50px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: 1px solid #ce9797;
+  background: transparent;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .grid__main .input .email {
+    width: 450px;
+    height: 53px;
+    font-size: 15px;
+    padding: 18.4px 85px 18.4px 25px;
+  }
+}
+
+.grid__main .input .email::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.grid__main .input .email:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.grid__main .input .email::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.grid__main .input .email::placeholder {
+  color: #ce9797;
+}
+
+.grid__main .input .email:not(:placeholder-shown):invalid {
+  border: 2px solid #f96262;
+  padding: 13.85px 23px;
+}
+
+.grid__main .input .email:not(:placeholder-shown):invalid ~ .error {
+  display: block;
+}
+
+.grid__main .input .email:not(:placeholder-shown):invalid ~ .submit {
+  top: 0px;
+}
+
+.grid__main .input .email:not(:placeholder-shown):invalid ~ .submit::before {
+  content: url(../images/icon-error.svg);
+  position: absolute;
+  left: -35px;
+  top: 14px;
+}
+
+.grid__main .input .submit {
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+  border: none;
+  border-radius: 25px;
+  width: 65px;
+  height: 48px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-box-shadow: 0px 7px 20px #f8bfbf;
+          box-shadow: 0px 7px 20px #f8bfbf;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .grid__main .input .submit {
+    height: 53px;
+    width: 95px;
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .grid__main .input .submit {
+    bottom: 18px;
+  }
+  .grid__main .input .submit:hover {
+    background: linear-gradient(135deg, #fbdada, #f3afaf);
+    -webkit-box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.grid__main .input .submit__button {
+  position: absolute;
+  top: 14px;
+  left: 28px;
+}
+
+@media (min-width: 768px) {
+  .grid__main .input .submit__button {
+    left: 43px;
+    top: 16px;
+  }
+}
+
+.grid__main .error {
+  display: none;
+  padding-left: 28px;
+  font-size: 0.87rem;
+  color: #f96262;
+}
+/*# sourceMappingURL=style.css.map */
